@@ -4,10 +4,10 @@ Koleksi skill AI berbasis `SKILL.md` untuk digunakan oleh agent yang kompatibel.
 
 ## Skills
 
-- [Vintage Paper Pack](skills/vintage-paper-pack/SKILL.md) — membuat lima ilustrasi vintage monoline pada latar kertas bertekstur untuk tema pilihan.
+- [Vintage Paper Pack](skills/vintage-paper-pack/SKILL.md) — satu canvas landscape dengan lima ikon vintage monoline berjajar horizontal di atas satu background kertas bertekstur.
 
 ## Penggunaan
 
-Buka folder skill yang diperlukan dan gunakan instruksi dalam `SKILL.md` pada agent yang memiliki tool sesuai. Skill ilustrasi membutuhkan kemampuan image generation.
+Buka `SKILL.md` skill yang diperlukan dan jalankan instruksinya dengan agent yang mendukung image generation.
 
 Contoh: **"Bikinkan Vintage Paper Pack Halloween"**.
