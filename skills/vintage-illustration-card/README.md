@@ -12,6 +12,12 @@ Prinsip hasil akhir:
 - **Tanpa bintang, sparkles, titik, garis cahaya, atau ornamen mengambang di sekitar objek** secara default.
 - Revisi kecil tidak mengubah gaya dan elemen yang sudah disetujui.
 
-Contoh: **"Bikin vintage ilustrasion card Christmas tree"**.
+Setiap card baru juga menghasilkan metadata untuk listing produk digital:
+- **SEO title (English):** deskriptif, unik, sesuai objek dan tema (bukan sekadar nama objek).
+- **SEO description:** satu kalimat singkat sesuai gambar.
+- **Filename slug:** lowercase dengan tanda hubung.
+- Judul dan metadata ditampilkan **di luar gambar**, tidak ditulis di atas ilustrasi.
+
+Contoh: **"Bikin vintage ilustrasion card Christmas tree"** → **"Decorated Evergreen Christmas Tree Vintage Watercolor Illustration"**.
 
 Baca [SKILL.md](SKILL.md) untuk instruksi lengkap. Membutuhkan agent dengan image-generation tool.
