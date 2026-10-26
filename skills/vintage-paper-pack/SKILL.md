@@ -14,13 +14,14 @@ Match the user's reference layout: an uninterrupted vintage paper background ext
 - Canvas: **3:2 landscape** by default (or the closest available wide landscape aspect ratio). One background across the entire canvas, no panel divisions.
 - Composition: five distinct theme-related icons, arranged left to right in a single centered row; roughly equal optical height and weight. Keep icons relatively small (about 13–17% of canvas width each), with generous top/bottom margins and consistent horizontal gaps.
 - Art style: **vintage minimalist monoline**, delicate fine outlines, consistent thin stroke, lightly hand-drawn character. Refined small details only; do not turn into bold doodles or coloring-book outlines.
-- Default background: **dark navy aged paper** (#14243A), faint organic grain, subtle fibers, sparse irregular flecks and slightly uneven pigment. Alternative on request: warm ivory (#F1EBDC), pale sage (#DDE3D5), etc.
-- Default ink: **muted champagne gold** (#E9D9B5) on navy. On light paper use fine charcoal/dark ink (#25231E).
+- Background and line colors are **fully user-configurable**; never lock the skill to navy/gold. Always honor explicitly requested colors, including named colors, hex codes, and palette references.
+- If colors are unspecified, choose a tasteful high-contrast vintage pair suited to the theme, e.g. warm ivory paper (#F1EBDC) + dark ink (#25231E), navy paper (#14243A) + champagne gold (#E9D9B5), or sage paper (#DDE3D5) + charcoal. No palette is mandatory.
+- Keep the requested background color uniform across the whole canvas while retaining subtle aged-paper grain and fibers. Use the requested line color consistently across all five icons. If contrast is weak, adjust only when the user has not specified exact colors; otherwise honor the selection.
 - Icons: outline only, mostly no fills; no drop shadows, gradients, 3D, photorealism, thick outlines, labels, typography, logos, borders, frames, or cards.
 - Avoid adding excessive stars/confetti around icons. Maintain recognizable silhouettes and correct anatomy/orientation.
 
 ## Workflow
-1. Read user theme and any requested palette, aspect ratio, or quantity. Use defaults without unnecessary clarification.
+1. Read user theme and any requested background color, line color, palette, aspect ratio, or quantity. User color preferences override example/default palettes. If colors are omitted, select a suitable vintage combination without unnecessary clarification.
 2. Choose exactly five recognizable, distinct subjects suitable for the theme.
 3. Generate **one image** showing all five icons together in one horizontal row on a continuous textured paper background.
 4. Inspect the result: count five icons; ensure one row (not 2+3), no visible tiles, consistent fine strokes, equal visual scale and spacing, large negative space, correct anatomy, no text.
@@ -33,8 +34,8 @@ Match the user's reference layout: an uninterrupted vintage paper background ext
 - New Year: fireworks, clinking champagne glasses, calendar, party hat, midnight clock.
 - Birthday: confetti burst, balloons, gift box, birthday cake, party horn.
 
-## Default image-generation prompt
-"Create ONE wide 3:2 landscape vintage paper illustration composition, closely following a premium minimalist monoline icon reference. A continuous deep dark navy handmade-paper background with faint organic speckling and subtle fibrous texture covers the entire canvas. In the horizontal center, arrange exactly FIVE different [THEME] symbols, left to right: [ICON 1], [ICON 2], [ICON 3], [ICON 4], [ICON 5]. Draw all symbols with the SAME extremely fine muted champagne-gold outline, delicate elegant hand-drawn vintage monoline style, no solid fills. Keep icons small and optically balanced, evenly spaced across ONE SINGLE STRAIGHT HORIZONTAL ROW, with abundant uninterrupted empty navy paper above and below. No grids, no collage, no squares, no separate cards, no borders, no labels, no lettering, no thick doodle strokes, no shadows, no gradients, no extra icons. Correct icon structure and anatomy."
+## Image-generation prompt template
+"Create ONE wide 3:2 landscape vintage paper illustration composition, closely following a premium minimalist monoline icon reference. A single continuous [USER-REQUESTED OR SELECTED BACKGROUND COLOR] handmade-paper background with faint organic speckling and subtle fibrous texture covers the entire canvas. In the horizontal center, arrange exactly FIVE different [THEME] symbols, left to right: [ICON 1], [ICON 2], [ICON 3], [ICON 4], [ICON 5]. Draw all symbols with the SAME extremely fine [USER-REQUESTED OR SELECTED LINE COLOR] outline, delicate elegant hand-drawn vintage monoline style, no solid fills. Keep icons small and optically balanced, evenly spaced across ONE SINGLE STRAIGHT HORIZONTAL ROW, with abundant uninterrupted empty paper above and below. No grids, no collage, no squares, no separate cards, no borders, no labels, no lettering, no thick doodle strokes, no shadows, no gradients, no extra icons. Correct icon structure and anatomy."
 
 ## Acceptance checklist
 - [ ] Exactly one unified image.
@@ -49,4 +50,6 @@ Match the user's reference layout: an uninterrupted vintage paper background ext
 - "Bikin vintage paper pack Christmas"
 - "Bikinkan vintage paper pack Halloween"
 - "Vintage paper pack New Year, background ivory, garis hitam"
+- "Vintage paper pack Christmas, background merah marun, garis krem"
+- "Vintage paper pack Birthday, background #E8E4D8, line #222222"
 - "Vintage paper pack Christmas, buat 5 file PNG terpisah" (explicit alternate mode)
