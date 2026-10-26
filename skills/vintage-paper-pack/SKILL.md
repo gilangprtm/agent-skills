@@ -1,51 +1,52 @@
 ---
 name: vintage-paper-pack
-description: Generate a cohesive pack of five distinct minimalist vintage monoline illustrations on textured aged paper. Use when the user requests a "vintage paper pack" for any theme, such as Halloween, Christmas, birthdays, or New Year, including Indonesian phrases "bikinkan vintage paper pack halloween".
+description: Create a single wide vintage textured-paper composition containing exactly five small, elegant monoline theme icons in one evenly spaced horizontal row. Use for "vintage paper pack" requests such as Christmas, Halloween, New Year, or birthday. Separate images are only an explicit opt-in.
 ---
 
 # Vintage Paper Pack
 
-## Goal
-Create **exactly five individual illustrations** per request, visually coordinated like a premium icon collection. Default theme is provided by the user. Do not generate five unrelated styles or combine all five into one image unless explicitly requested.
+## Non-negotiable default output
+Generate **ONE unified image containing FIVE separate icons arranged in ONE horizontal row**. Do not create a collage, a grid, separate cards, individual square panels, or five separate images by default.
 
-## Default design system
-- Illustration: vintage minimalist monoline, hand-drawn outline icons, thin consistent stroke, clean silhouettes, tasteful small ornamental details.
-- No filled silhouettes, photorealism, 3D, heavy shading, gradients, letters, captions, numbers, logos, or watermarks unless requested.
-- Background: subtle aged handmade paper, organic fibers, tiny random speckles, faint wear, non-uniform color; texture must be understated, not muddy.
-- Palette: warm ivory (#F1EBDC) with dark ink (#25231E); optional alternate dark navy (#14243A) with champagne ink (#E9D9B5), or muted sage (#DDE3D5) with charcoal ink.
-- Icons should have balanced visual weight, coherent line thickness and spacing, distinct recognizable subjects, and enough negative space.
-- Prefer 1:1 for each image. Center each illustration with generous margins. No text.
+Match the user's reference layout: an uninterrupted vintage paper background extending edge-to-edge; five small line drawings aligned along the horizontal middle; equal spacing; generous empty space above and below. The entire design should feel airy, understated, and refined.
+
+## Visual specification
+- Canvas: **3:2 landscape** by default (or the closest available wide landscape aspect ratio). One background across the entire canvas, no panel divisions.
+- Composition: five distinct theme-related icons, arranged left to right in a single centered row; roughly equal optical height and weight. Keep icons relatively small (about 13–17% of canvas width each), with generous top/bottom margins and consistent horizontal gaps.
+- Art style: **vintage minimalist monoline**, delicate fine outlines, consistent thin stroke, lightly hand-drawn character. Refined small details only; do not turn into bold doodles or coloring-book outlines.
+- Default background: **dark navy aged paper** (#14243A), faint organic grain, subtle fibers, sparse irregular flecks and slightly uneven pigment. Alternative on request: warm ivory (#F1EBDC), pale sage (#DDE3D5), etc.
+- Default ink: **muted champagne gold** (#E9D9B5) on navy. On light paper use fine charcoal/dark ink (#25231E).
+- Icons: outline only, mostly no fills; no drop shadows, gradients, 3D, photorealism, thick outlines, labels, typography, logos, borders, frames, or cards.
+- Avoid adding excessive stars/confetti around icons. Maintain recognizable silhouettes and correct anatomy/orientation.
 
 ## Workflow
-1. Parse theme, quantity, aspect ratio, background, ink color, and delivery format. If absent, use five images, square 1:1, ivory paper, black ink. Do not ask unnecessary questions.
-2. Select **five different instantly recognizable subjects** specific to the theme. Avoid duplicating motifs or repeating near-identical icons.
-3. Establish one shared visual specification for the entire pack: line weight, icon scale, paper texture, background color, palette, and margins.
-4. Generate each illustration as an **individual image** with the image-generation tool, sequentially if needed. Maintain consistent art direction across the five generations. Do not claim completion before all five exist.
-5. Inspect each result for anatomy/orientation, broken contours, extraneous limbs, disconnected strokes, inconsistent scale, and unwanted text. Regenerate defective results when possible.
-6. If tools allow file handling, export five separately named PNGs (`01-subject.png` through `05-subject.png`) and optionally ZIP them. If no file-handling capability is available, deliver five separate image outputs and explain any export limitation. Never claim PNG, ZIP, or transparent background without producing it.
+1. Read user theme and any requested palette, aspect ratio, or quantity. Use defaults without unnecessary clarification.
+2. Choose exactly five recognizable, distinct subjects suitable for the theme.
+3. Generate **one image** showing all five icons together in one horizontal row on a continuous textured paper background.
+4. Inspect the result: count five icons; ensure one row (not 2+3), no visible tiles, consistent fine strokes, equal visual scale and spacing, large negative space, correct anatomy, no text.
+5. If the result breaks a core constraint, revise/regenerate where possible before delivery.
+6. Only when the user **explicitly asks for separate assets**, create five individual images instead; keep the same line art and background style. Do not assume five icons means five separate files.
 
-## Subject example: Halloween
-1. Seated black-cat outline with one tail and two ears.
-2. Symmetrical spider web with a single eight-legged spider.
-3. Rounded witch cauldron with delicate curling steam.
-4. Classic witch broom with bound bristles.
-5. Vintage lantern with a small candle flame.
+## Subject examples
+- Christmas: Christmas tree, hanging bells, holly wreath, Christmas stocking, wrapped present.
+- Halloween: black cat, spider web, steaming cauldron, witch broom, vintage lantern.
+- New Year: fireworks, clinking champagne glasses, calendar, party hat, midnight clock.
+- Birthday: confetti burst, balloons, gift box, birthday cake, party horn.
 
-## Generation prompt template
-"A single [SUBJECT] icon in elegant minimalist vintage monoline illustration style. Thin clean hand-drawn [INK COLOR] outlines, consistent stroke weight, charming subtle ornamental detail, balanced recognizable silhouette, centered composition with generous negative space. On a [BACKGROUND COLOR] aged handmade paper background with extremely subtle organic paper fibers, faint grain and tiny scattered speckles. Cohesive premium vintage icon collection aesthetic. Square 1:1. No typography, no letters, no numbers, no border, no extra icons, no filled areas, no 3D, no gradients, no harsh shadows. Anatomically and structurally coherent."
+## Default image-generation prompt
+"Create ONE wide 3:2 landscape vintage paper illustration composition, closely following a premium minimalist monoline icon reference. A continuous deep dark navy handmade-paper background with faint organic speckling and subtle fibrous texture covers the entire canvas. In the horizontal center, arrange exactly FIVE different [THEME] symbols, left to right: [ICON 1], [ICON 2], [ICON 3], [ICON 4], [ICON 5]. Draw all symbols with the SAME extremely fine muted champagne-gold outline, delicate elegant hand-drawn vintage monoline style, no solid fills. Keep icons small and optically balanced, evenly spaced across ONE SINGLE STRAIGHT HORIZONTAL ROW, with abundant uninterrupted empty navy paper above and below. No grids, no collage, no squares, no separate cards, no borders, no labels, no lettering, no thick doodle strokes, no shadows, no gradients, no extra icons. Correct icon structure and anatomy."
 
-## Reference composition option
-If the user explicitly asks for a **single sheet** like their reference photos, arrange five icons horizontally with equal spacing on a 3:2 or 16:9 paper canvas; this is an alternative output, not a replacement for five separate files unless they request only a sheet.
+## Acceptance checklist
+- [ ] Exactly one unified image.
+- [ ] Exactly five recognizable icons in a single horizontal row.
+- [ ] Continuous background, no tiles or dividing lines.
+- [ ] Thin, refined, consistent monoline strokes.
+- [ ] Small icons with substantial negative space.
+- [ ] Cohesive vintage paper texture and ink color.
+- [ ] No text, unintended objects, or structural errors.
 
-## Quality checks
-- Five distinct theme-specific subjects.
-- Each icon is isolated and legible at small sizes.
-- Same line thickness, same paper tone and texture, same scale and margin system.
-- Correct anatomy/structure (e.g., cat: four limbs if visible, one tail; spider: eight legs).
-- No stray marks, unwanted objects, letters, or accidental merged forms.
-
-## Invocation examples
+## Example invocations
+- "Bikin vintage paper pack Christmas"
 - "Bikinkan vintage paper pack Halloween"
-- "Vintage paper pack Natal, background navy, garis emas"
-- "Buat vintage paper pack ulang tahun, 5 gambar PNG rasio 1:1"
-- "Vintage paper pack Halloween, satu lembar 5 ikon berjajar"
+- "Vintage paper pack New Year, background ivory, garis hitam"
+- "Vintage paper pack Christmas, buat 5 file PNG terpisah" (explicit alternate mode)
