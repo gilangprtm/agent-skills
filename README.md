@@ -8,6 +8,7 @@ Koleksi skill AI berbasis `SKILL.md` untuk digunakan oleh agent yang kompatibel.
 - [Hero Precision UI](skills/hero-precision-ui/SKILL.md) — rekonstruksi UI dari screenshot menjadi satu `index.html` menggunakan Tailwind CSS v4.
 - [Precision UI Slicing](skills/precision-ui-slicing/SKILL.md) — panduan Native Pi untuk audit dan rekonstruksi UI screenshot secara responsif dan evidence-driven.
 - [Vintage Paper Pack](skills/vintage-paper-pack/SKILL.md) — satu canvas landscape dengan lima ikon vintage monoline berjajar horizontal di atas satu background kertas bertekstur.
+- [Vintage Illustration Card](skills/vintage-illustration-card/SKILL.md) — satu ilustrasi vintage berwarna pada canvas 1:1, objek terpusat dengan margin lega dan tanpa ornamen mengambang.
 
 ## Penggunaan
 
