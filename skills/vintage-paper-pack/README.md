@@ -1,7 +1,11 @@
-# Vintage Paper Pack Skill
+# Vintage Paper Pack
 
-Install the `vintage-paper-pack` folder as a custom skill in a compatible agent or ChatGPT skill environment. The skill is a set of instructions, not a standalone image generator: image creation requires an image-generation tool available to the agent.
+Skill untuk membuat **satu gambar landscape** berisi **lima ikon vintage monoline yang berjajar horizontal**, sesuai referensi pengguna.
 
-Example invocation: **Bikinkan vintage paper pack Halloween**.
+**Default:** satu canvas 3:2, lima ikon kecil dalam satu baris, background dark navy textured paper yang menyatu, garis tipis champagne gold, ruang kosong luas. Tidak ada panel, grid, atau kartu.
 
-Default output: five separate square vintage monoline illustrations on ivory textured paper. See `SKILL.md` for overrides and quality rules.
+Contoh: **"Bikin vintage paper pack Christmas"**.
+
+Alternatif: warna ivory/sage atau lima gambar terpisah hanya jika diminta secara eksplisit.
+
+Baca [SKILL.md](SKILL.md) untuk aturan komposisi, prompt, dan pemeriksaan kualitas. Skill memerlukan agent dengan kemampuan image generation.
