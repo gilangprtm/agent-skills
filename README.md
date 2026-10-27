@@ -4,6 +4,8 @@ Koleksi skill AI berbasis `SKILL.md` untuk digunakan oleh agent yang kompatibel.
 
 ## Skills
 
+- [Asset Batch](skills/asset-batch/SKILL.md) — membuat banyak aset gambar dengan satu file independen per aset, bukan sprite sheet atau kolase.
+
 - [Adaptive Form UX](skills/adaptive-form-ux/SKILL.md) — merancang layout form adaptif berdasarkan konten, grouping, media, ruang tersedia, dan perilaku responsif.
 - [UI Asset Generator](skills/ui-asset-generator/SKILL.md) — membuat aset gambar raster dari screenshot UI melalui image generation dan iterasi visual.
 - [Hero Precision UI](skills/hero-precision-ui/SKILL.md) — rekonstruksi UI dari screenshot menjadi satu `index.html` menggunakan Tailwind CSS v4.
